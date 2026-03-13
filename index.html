@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Du Lịch Việt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Shopping Cart Icon -->
+<div class="cart-icon" id="cart-icon-btn">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Giỏ hàng của bạn</h2>
+        <button class="close-cart" id="close-cart-btn">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+        <p>Giỏ hàng đang trống.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Tổng cộng:</span>
+            <span id="cart-total-price">0 VND</span>
+        </div>
+        <button class="btn-checkout">Thanh toán ngay</button>
+    </div>
+</div>
+
+    
+<nav class="main-nav">
+    <div class="logo">
+        <img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt">
+    </div>
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="has-submenu">
+            <a href="tourtrongnuoc.html">Tour trong nước <span class="dropdown-icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mienbac.html">Miền Bắc <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-hanoi.html">Hà Nội</a></li>
+                        <li><a href="tour-haiphong.html">Hải Phòng</a></li>
+                        <li><a href="tour-sapa.html">Sapa</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mientrung.html">Miền Trung <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-huedanang.html">Huế - Đà Nẵng - Hội An</a></li>
+                        <li><a href="tour-nhatrang.html">Nha Trang</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-miennam.html">Miền Nam <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-mientay.html">Miền Tây Sông Nước</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="vemaybay.html">Vé máy bay</a></li>
+    </ul>
+</nav>
+
+    <footer></footer>
+<script src="cart.js"></script>
+</body>
+</html>

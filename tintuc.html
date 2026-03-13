@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin tức - Du Lịch Việt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Shopping Cart Icon -->
+<div class="cart-icon" id="cart-icon-btn">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Giỏ hàng của bạn</h2>
+        <button class="close-cart" id="close-cart-btn">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+        <p>Giỏ hàng đang trống.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Tổng cộng:</span>
+            <span id="cart-total-price">0 VND</span>
+        </div>
+        <button class="btn-checkout">Thanh toán ngay</button>
+    </div>
+</div>
+
+    
+
+
+
+<nav class="main-nav">
+    <div class="logo">
+        <img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt">
+    </div>
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="has-submenu">
+            <a href="tourtrongnuoc.html">Tour trong nước <span class="dropdown-icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mienbac.html">Miền Bắc <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-hanoi.html">Hà Nội</a></li>
+                        <li><a href="tour-haiphong.html">Hải Phòng</a></li>
+                        <li><a href="tour-sapa.html">Sapa</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mientrung.html">Miền Trung <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-huedanang.html">Huế - Đà Nẵng - Hội An</a></li>
+                        <li><a href="tour-nhatrang.html">Nha Trang</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-miennam.html">Miền Nam <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-mientay.html">Miền Tây Sông Nước</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="vemaybay.html">Vé máy bay</a></li>
+    </ul>
+</nav>
+
+
+
+
+    <main><div class="news-grid">
+
+    <article class="news-card">
+        <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1589394815804-964ed962eb33?auto=format&fit=crop&q=80&w=800" alt="Khám phá 5 hòn đảo hoang sơ nhất tại Phú Quốc">
+            <span class="category-tag">Khám phá</span>
+        </div>
+        <div class="news-card-content">
+            <p class="news-date"><i class="far fa-calendar-alt"></i> 15/10/2023</p>
+            <h3>Khám phá 5 hòn đảo hoang sơ nhất tại Phú Quốc</h3>
+            <p class="news-summary">Phú Quốc không chỉ có Bãi Sao hay Bãi Trường. Hãy cùng điểm qua 5 hòn đảo nhỏ tuyệt đẹp tại quần đảo An Thới nơi bạn có thể tận hưởng làn nước trong vắt và không gian yên tĩnh tuyệt đối.</p>
+            <a href="#" class="btn-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+    <article class="news-card">
+        <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1563219438-662363e778a4?auto=format&fit=crop&q=80&w=800" alt="Top 10 món ăn đường phố phải thử khi đến Hà Nội">
+            <span class="category-tag">Ẩm thực</span>
+        </div>
+        <div class="news-card-content">
+            <p class="news-date"><i class="far fa-calendar-alt"></i> 12/10/2023</p>
+            <h3>Top 10 món ăn đường phố phải thử khi đến Hà Nội</h3>
+            <p class="news-summary">Ẩm thực Hà Nội luôn có sức hút kỳ lạ với du khách. Từ Phở, Bún Chả đến những món ít người biết hơn như Bún Thang hay Bánh Tôm, đây là danh sách những món ăn bạn không thể bỏ lỡ.</p>
+            <a href="#" class="btn-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+    <article class="news-card">
+        <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=800" alt="Lễ hội Hoa Tam Giác Mạch Hà Giang 2023 sắp bắt đầu">
+            <span class="category-tag">Sự kiện</span>
+        </div>
+        <div class="news-card-content">
+            <p class="news-date"><i class="far fa-calendar-alt"></i> 10/10/2023</p>
+            <h3>Lễ hội Hoa Tam Giác Mạch Hà Giang 2023 sắp bắt đầu</h3>
+            <p class="news-summary">Mùa thu về cũng là lúc những cánh đồng hoa tam giác mạch phủ hồng các cao nguyên đá. Lễ hội năm nay hứa hẹn nhiều hoạt động văn hóa đặc sắc của đồng bào các dân tộc vùng cao.</p>
+            <a href="#" class="btn-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+    <article class="news-card">
+        <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&q=80&w=800" alt="Kinh nghiệm săn vé máy bay giá rẻ mùa cuối năm">
+            <span class="category-tag">Cẩm nang</span>
+        </div>
+        <div class="news-card-content">
+            <p class="news-date"><i class="far fa-calendar-alt"></i> 08/10/2023</p>
+            <h3>Kinh nghiệm săn vé máy bay giá rẻ mùa cuối năm</h3>
+            <p class="news-summary">Đặt vé sớm, chọn giờ bay thấp điểm và tận dụng các chương trình khuyến mãi từ hãng hàng không là những bí quyết giúp bạn tiết kiệm chi phí cho chuyến du lịch Tết sắp tới.</p>
+            <a href="#" class="btn-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+    <article class="news-card">
+        <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1599708153386-62e2d06286d0?auto=format&fit=crop&q=80&w=800" alt="Hành trình di sản: 1 ngày khám phá cố đô Huế">
+            <span class="category-tag">Khám phá</span>
+        </div>
+        <div class="news-card-content">
+            <p class="news-date"><i class="far fa-calendar-alt"></i> 05/10/2023</p>
+            <h3>Hành trình di sản: 1 ngày khám phá cố đô Huế</h3>
+            <p class="news-summary">Với thời gian hạn hẹp, bạn vẫn có thể tham quan Đại Nội, Chùa Thiên Mụ và thưởng thức một bữa cơm hến đặc sản. Bài viết này sẽ hướng dẫn bạn lịch trình tối ưu nhất.</p>
+            <a href="#" class="btn-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+    <article class="news-card">
+        <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1601058443310-449e7b296472?auto=format&fit=crop&q=80&w=800" alt="Nha Trang: Những hoạt động thể thao biển mới lạ">
+            <span class="category-tag">Sự kiện</span>
+        </div>
+        <div class="news-card-content">
+            <p class="news-date"><i class="far fa-calendar-alt"></i> 02/10/2023</p>
+            <h3>Nha Trang: Những hoạt động thể thao biển mới lạ</h3>
+            <p class="news-summary">Ngoài lặn ngắm san hô, Nha Trang hiện nay còn cung cấp các dịch vụ bay Flyboard và đi bộ dưới đáy biển. Những trải nghiệm cảm giác mạnh này đang thu hút đông đảo giới trẻ.</p>
+            <a href="#" class="btn-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+</div></main>
+    <footer></footer>
+<script src="cart.js"></script>
+</body>
+</html>

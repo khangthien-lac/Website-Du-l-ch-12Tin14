@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vé máy bay - Du Lịch Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <span>Hotline: 1900 1177</span>
+            <div class="top-links">
+                <a href="#">Đăng ký</a> | <a href="#">Đăng nhập</a>
+            </div>
+        </div>
+        
+<nav class="main-nav">
+    <div class="logo">
+        <img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt">
+    </div>
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="has-submenu">
+            <a href="tourtrongnuoc.html">Tour trong nước <span class="dropdown-icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mienbac.html">Miền Bắc <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-hanoi.html">Hà Nội</a></li>
+                        <li><a href="tour-haiphong.html">Hải Phòng</a></li>
+                        <li><a href="tour-sapa.html">Sapa</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mientrung.html">Miền Trung <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-huedanang.html">Huế - Đà Nẵng - Hội An</a></li>
+                        <li><a href="tour-nhatrang.html">Nha Trang</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-miennam.html">Miền Nam <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-mientay.html">Miền Tây Sông Nước</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="vemaybay.html">Vé máy bay</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <main class="flight-search-container" style="max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <h1 style="text-align: center; color: #c2185b;">Tìm Kiếm Vé Máy Bay</h1>
+        
+        <form id="flight-search-form" style="display: grid; gap: 20px; margin-top: 20px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                    <label for="departure-city"><b>Điểm đi:</b></label>
+                    <select id="departure-city" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="HAN">Hà Nội</option>
+                        <option value="SGN">TP. HCM</option>
+                        <option value="DAD">Đà Nẵng</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="arrival-city"><b>Điểm đến:</b></label>
+                    <select id="arrival-city" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="SGN">TP. HCM</option>
+                        <option value="HAN">Hà Nội</option>
+                        <option value="DAD">Đà Nẵng</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="departure-date"><b>Ngày đi:</b></label>
+                <input type="date" id="departure-date" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div class="form-group">
+                <label><b>Hãng hàng không:</b></label>
+                <div style="display: flex; gap: 20px; margin-top: 10px;">
+                    <label><input type="radio" name="airline" value="VNA" checked> Vietnam Airlines</label>
+                    <label><input type="radio" name="airline" value="VJA"> Vietjet Air</label>
+                    <label><input type="radio" name="airline" value="BAV"> Bamboo Airways</label>
+                </div>
+            </div>
+
+            <button type="button" id="btn-search-flights" style="background: #c2185b; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; font-weight: bold; transition: background 0.3s;">
+                Tìm kiếm & Đặt vé
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; border-top: 1px solid #eee;">&copy; 2023 Du Lịch Việt. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="flight.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Miền Tây</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Shopping Cart Icon -->
+<div class="cart-icon" id="cart-icon-btn">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Giỏ hàng của bạn</h2>
+        <button class="close-cart" id="close-cart-btn">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+        <p>Giỏ hàng đang trống.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Tổng cộng:</span>
+            <span id="cart-total-price">0 VND</span>
+        </div>
+        <button class="btn-checkout">Thanh toán ngay</button>
+    </div>
+</div>
+
+    
+
+
+
+
+<nav class="main-nav">
+    <div class="logo">
+        <img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt">
+    </div>
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="has-submenu">
+            <a href="tourtrongnuoc.html">Tour trong nước <span class="dropdown-icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mienbac.html">Miền Bắc <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-hanoi.html">Hà Nội</a></li>
+                        <li><a href="tour-haiphong.html">Hải Phòng</a></li>
+                        <li><a href="tour-sapa.html">Sapa</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mientrung.html">Miền Trung <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-huedanang.html">Huế - Đà Nẵng - Hội An</a></li>
+                        <li><a href="tour-nhatrang.html">Nha Trang</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-miennam.html">Miền Nam <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-mientay.html">Miền Tây Sông Nước</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="vemaybay.html">Vé máy bay</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+    <h1>Miền Tây</h1>
+    <div class="tour-gallery">
+    <h4>Hình ảnh nổi bật</h4>
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&q=80&w=800" alt="Miền Tây Gallery" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?auto=format&fit=crop&q=80&w=800" alt="Miền Tây Gallery" class="gallery-item">
+    </div>
+</div>
+
+<section id="customer-reviews">
+    <h3>Đánh giá từ khách hàng</h3>
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Lý Quốc Bảo</span>
+                <span class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            </div>
+            <p class="review-comment">"Trải nghiệm đi chợ nổi Cái Răng lúc sáng sớm rất độc đáo. The experience of visiting Cai Rang floating market early in the morning is very unique."</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Emily Watson</span>
+                <span class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            </div>
+            <p class="review-comment">"The people in the Mekong Delta are so hospitable and friendly. Người dân miền Tây thật hiếu khách và thân thiện."</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Trương Gia Kiệt</span>
+                <span class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+            </div>
+            <p class="review-comment">"Vườn trái cây trù phú, tôi rất thích cảm giác tự tay hái quả. The fruit orchards are abundant; I really enjoyed the feeling of picking fruits myself."</p>
+        </div>
+    </div>
+</section>
+
+<section id="tour-packages">
+    <h3>Gói tour và Đặt chỗ</h3>
+    <div class="packages-grid">
+        <div class="package-card" style="border:1px solid #ddd; padding:15px; margin-bottom:10px; border-radius:8px;">
+            <h4>Miền Tây Sông Nước (Standard)</h4>
+            <p>Thăm chợ nổi Cái Răng và vườn trái cây Cần Thơ.</p>
+            <p><strong>Giá: 950,000 VND</strong></p>
+            <button class="btn-add-cart" data-name="Miền Tây Sông Nước (Standard)" data-price="950000" style="background:#c2185b; color:white; border:none; padding:8px 15px; cursor:pointer; border-radius:4px;">Thêm vào giỏ</button>
+        </div>
+        <div class="package-card" style="border:1px solid #ddd; padding:15px; margin-bottom:10px; border-radius:8px;">
+            <h4>Hành trình Chín Rồng (Premium)</h4>
+            <p>Trải nghiệm du thuyền sang trọng và nghỉ tại resort ven sông.</p>
+            <p><strong>Giá: 1,850,000 VND</strong></p>
+            <button class="btn-add-cart" data-name="Hành trình Chín Rồng (Premium)" data-price="1850000" style="background:#c2185b; color:white; border:none; padding:8px 15px; cursor:pointer; border-radius:4px;">Thêm vào giỏ</button>
+        </div>
+    </div>
+</section>
+<footer></footer>
+<script src="cart.js"></script>
+</body>
+</html>

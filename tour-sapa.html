@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Sapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Shopping Cart Icon -->
+<div class="cart-icon" id="cart-icon-btn">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Giỏ hàng của bạn</h2>
+        <button class="close-cart" id="close-cart-btn">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+        <p>Giỏ hàng đang trống.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Tổng cộng:</span>
+            <span id="cart-total-price">0 VND</span>
+        </div>
+        <button class="btn-checkout">Thanh toán ngay</button>
+    </div>
+</div>
+
+    
+
+
+
+
+<nav class="main-nav">
+    <div class="logo">
+        <img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt">
+    </div>
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="has-submenu">
+            <a href="tourtrongnuoc.html">Tour trong nước <span class="dropdown-icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mienbac.html">Miền Bắc <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-hanoi.html">Hà Nội</a></li>
+                        <li><a href="tour-haiphong.html">Hải Phòng</a></li>
+                        <li><a href="tour-sapa.html">Sapa</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mientrung.html">Miền Trung <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-huedanang.html">Huế - Đà Nẵng - Hội An</a></li>
+                        <li><a href="tour-nhatrang.html">Nha Trang</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-miennam.html">Miền Nam <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-mientay.html">Miền Tây Sông Nước</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="vemaybay.html">Vé máy bay</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+    <h1>Sapa</h1>
+    <div class="tour-gallery">
+    <h4>Hình ảnh nổi bật</h4>
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=800" alt="Sapa Gallery" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1506190503911-fa67b82d282b?auto=format&fit=crop&q=80&w=800" alt="Sapa Gallery" class="gallery-item">
+    </div>
+</div>
+
+<section id="customer-reviews">
+    <h3>Đánh giá từ khách hàng</h3>
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Đặng Thu Thảo</span>
+                <span class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            </div>
+            <p class="review-comment">"Sapa đẹp như tranh vẽ. Chinh phục đỉnh Fansipan bằng cáp treo là một trải nghiệm tuyệt vời với tầm nhìn bao quát."</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Robert Chen</span>
+                <span class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+            </div>
+            <p class="review-comment">"The terraced fields in Muong Hoa Valley are breathtaking. Learning about the Hmong culture was very eye-opening."</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Vũ Đức Duy</span>
+                <span class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+            </div>
+            <p class="review-comment">"Thời tiết Sapa se lạnh rất thích, tuy nhiên đường đi bộ vào các bản làng đôi khi hơi trơn trượt."</p>
+        </div>
+    </div>
+</section>
+
+<section id="tour-packages">
+    <h3>Gói tour và Đặt chỗ</h3>
+    <div class="packages-grid">
+        <div class="package-card" style="border:1px solid #ddd; padding:15px; margin-bottom:10px; border-radius:8px;">
+            <h4>Sapa Trekking (Standard)</h4>
+            <p>Khám phá bản Cát Cát và Thung lũng Mường Hoa.</p>
+            <p><strong>Giá: 1,200,000 VND</strong></p>
+            <button class="btn-add-cart" data-name="Sapa Trekking (Standard)" data-price="1200000" style="background:#c2185b; color:white; border:none; padding:8px 15px; cursor:pointer; border-radius:4px;">Thêm vào giỏ</button>
+        </div>
+        <div class="package-card" style="border:1px solid #ddd; padding:15px; margin-bottom:10px; border-radius:8px;">
+            <h4>Chinh phục Fansipan (Premium)</h4>
+            <p>Bao gồm vé cáp treo Fansipan và hướng dẫn viên riêng.</p>
+            <p><strong>Giá: 2,500,000 VND</strong></p>
+            <button class="btn-add-cart" data-name="Chinh phục Fansipan (Premium)" data-price="2500000" style="background:#c2185b; color:white; border:none; padding:8px 15px; cursor:pointer; border-radius:4px;">Thêm vào giỏ</button>
+        </div>
+    </div>
+</section>
+<footer></footer>
+<script src="cart.js"></script>
+</body>
+</html>
