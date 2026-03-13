@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du Lịch Việt - Tour Nội Địa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Shopping Cart Icon -->
+<div class="cart-icon" id="cart-icon-btn">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Giỏ hàng của bạn</h2>
+        <button class="close-cart" id="close-cart-btn">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+        <p>Giỏ hàng đang trống.</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Tổng cộng:</span>
+            <span id="cart-total-price">0 VND</span>
+        </div>
+        <button class="btn-checkout">Thanh toán ngay</button>
+    </div>
+</div>
+
+
+    <header>
+        <div class="top-bar">
+            <span>Hotline: 1900 1177</span>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm tour miền Bắc, miền Trung, miền Nam...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+<nav class="main-nav">
+    <div class="logo">
+        <a href="index.html"><img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt"></a>
+    </div>
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="has-submenu">
+            <a href="tourtrongnuoc.html">Tour trong nước <span class="dropdown-icon">&#9660;</span></a>
+            <ul class="submenu">
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mienbac.html">Miền Bắc <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-hanoi.html">Hà Nội</a></li>
+                        <li><a href="tour-haiphong.html">Hải Phòng</a></li>
+                        <li><a href="tour-sapa.html">Sapa</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-mientrung.html">Miền Trung <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-huedanang.html">Huế - Đà Nẵng - Hội An</a></li>
+                        <li><a href="tour-nhatrang.html">Nha Trang</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="tourtrongnuoc-miennam.html">Miền Nam <span class="dropdown-icon">&#9654;</span></a>
+                    <ul class="submenu">
+                        <li><a href="tour-mientay.html">Miền Tây Sông Nước</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+        <li><a href="tintuc.html">Tin tức</a></li>
+        <li><a href="vemaybay.html">Vé máy bay</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
+    </header>
+
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80" alt="Vịnh Hạ Long"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1509030450996-93525892b13c?auto=format&fit=crop&w=1200&q=80" alt="Đà Lạt"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1200&q=80" alt="Hội An"></div>
+        </div>
+        <div class="overlay-text">KHÁM PHÁ VIỆT NAM 2026</div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">DANH SÁCH TOUR NỔI BẬT</h2>
+        
+        <div class="tour-grid">
+            <div class="tour-card">
+                <div class="tour-img">
+                    <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=400&q=80" alt="Hội An">
+                    <span class="tag">Miền Trung</span>
+                </div>
+                <div class="tour-info">
+                    <h3>Tour Đà Nẵng - Hội An - Huế (4N3Đ)</h3>
+                    <p class="price">4.590.000đ</p>
+                    <button class="btn-buy">Đặt Tour Ngay</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="tour-img">
+                    <img src="https://images.unsplash.com/photo-1599708145800-bb23038c5864?auto=format&fit=crop&w=400&q=80" alt="Sapa">
+                    <span class="tag">Miền Bắc</span>
+                </div>
+                <div class="tour-info">
+                    <h3>Khám phá Sapa - Đỉnh Fansipan</h3>
+                    <p class="price">3.250.000đ</p>
+                    <button class="btn-buy">Đặt Tour Ngay</button>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <div class="tour-img">
+                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=400&q=80" alt="Phú Quốc">
+                    <span class="tag">Miền Nam</span>
+                </div>
+                <div class="tour-info">
+                    <h3>Nghỉ dưỡng Phú Quốc - Đảo Ngọc</h3>
+                    <p class="price">5.100.000đ</p>
+                    <button class="btn-buy">Đặt Tour Ngay</button>
+                </div>
+            </div>
+            
+            <div class="tour-card">
+                <div class="tour-img">
+                    <img src="https://images.unsplash.com/photo-1540304453527-62f979142a17?auto=format&fit=crop&w=400&q=80" alt="Ninh Bình">
+                    <span class="tag">Miền Bắc</span>
+                </div>
+                <div class="tour-info">
+                    <h3>Tràng An - Bái Đính - Ninh Bình</h3>
+                    <p class="price">1.890.000đ</p>
+                    <button class="btn-buy">Đặt Tour Ngay</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="tour-grid">
+            <div class="tour-item">
+                <h3>Vịnh Hạ Long</h3>
+                <a href="#" class="btn-tour btn-add-cart" data-name="Tour Hạ Long" data-price="1500000" onclick="window.addToCart('Tour Hạ Long', '1500000')">Thêm vào giỏ</button>
+            </div>
+            <div class="tour-item">
+                <h3>Đảo Phú Quốc</h3>
+                <a href="#" class="btn-tour btn-add-cart" data-name="Tour Phú Quốc" data-price="3500000" onclick="window.addToCart('Tour Phú Quốc', '3500000')">Thêm vào giỏ</button>
+            </div>
+        </div>
+        </main>
+
+<script src="cart.js"></script>
+</body>
+</html>
