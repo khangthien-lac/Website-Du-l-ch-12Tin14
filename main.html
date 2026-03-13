@@ -44,9 +44,13 @@
         
 
 
+
+
+
+
 <nav class="main-nav">
     <div class="logo">
-        <img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt">
+        <a href="main.html"><img src="https://dulichviet.com.vn/images/logo.png" alt="Du Lịch Việt"></a>
     </div>
     <ul>
         <li><a href="main.html">Trang chủ</a></li>
@@ -76,11 +80,15 @@
                 </li>
             </ul>
         </li>
-        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="khuyenmai.html">Khuyến mãi</a></li>
         <li><a href="tintuc.html">Tin tức</a></li>
         <li><a href="vemaybay.html">Vé máy bay</a></li>
     </ul>
 </nav>
+
+
+
+
 
 
 
@@ -147,7 +155,18 @@
                 </div>
             </div>
         </div>
-    </main>
+    
+        <div class="tour-grid">
+            <div class="tour-item">
+                <h3>Vịnh Hạ Long</h3>
+                <a href="#" class="btn-tour btn-add-cart" data-name="Tour Hạ Long" data-price="1500000" onclick="window.addToCart('Tour Hạ Long', '1500000')">Thêm vào giỏ</button>
+            </div>
+            <div class="tour-item">
+                <h3>Đảo Phú Quốc</h3>
+                <a href="#" class="btn-tour btn-add-cart" data-name="Tour Phú Quốc" data-price="3500000" onclick="window.addToCart('Tour Phú Quốc', '3500000')">Thêm vào giỏ</button>
+            </div>
+        </div>
+        </main>
 
 <script src="cart.js"></script>
 </body>
